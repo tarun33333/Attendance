@@ -1,0 +1,228 @@
+/* Student Login Page */
+.student-login-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec); /* cool gray-blue blend */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.student-login-page h1 {
+  color: #3f72af; /* Steel blue */
+  margin-bottom: 20px;
+}
+
+.student-login-form {
+  background-color: #ffffff;
+  padding: 25px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(63, 114, 175, 0.2); /* steel blue tint */
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.student-login-label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #3f72af;
+}
+
+.student-login-form input {
+  padding: 10px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #f8f9fa;
+  color: #333;
+  font-size: 14px;
+}
+
+.student-login-form input:focus {
+  border-color: #3f72af;
+  box-shadow: 0 0 0 2px rgba(63, 114, 175, 0.2);
+  outline: none;
+}
+
+.student-login-button {
+  padding: 10px;
+  background-color: #3f72af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.student-login-button:hover {
+  background-color: #2c5282;
+}
+
+.student-login-form p {
+  margin-top: 15px;
+  text-align: center;
+  color: #666;
+}
+
+.student-login-form a {
+  color: #3f72af;
+  text-decoration: none;
+}
+
+.student-login-form a:hover {
+  text-decoration: underline;
+}
+
+/* Student Dashboard */
+.student-dashboard {
+  background: linear-gradient(to bottom, #f0f4f8, #dce3f0);
+  padding: 40px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.student-dashboard h1 {
+  text-align: center;
+  color: #3f72af;
+  margin-bottom: 30px;
+}
+
+.student-class-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.student-class-card {
+  background-color: #ffffff;
+  border: 2px solid #cfd8dc;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(63, 114, 175, 0.1);
+  text-align: center;
+  color: #333;
+}
+
+.student-class-card h3,
+.student-class-card h4 {
+  margin: 10px 0;
+  color: #3f72af;
+}
+
+.student-otp-button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: #3f72af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.student-otp-button:hover {
+  background-color: #2c5282;
+}
+
+
+nav {
+  background-color: #3f72af;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #dbe9f4;
+}
+
+
+
+
+/* view */
+
+.dashboard input[type="date"],
+.dashboard select {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #3f72af;
+  box-shadow: 0 2px 4px rgba(63, 114, 175, 0.1);
+}
+
+.dashboard select:focus,
+.dashboard input[type="date"]:focus {
+  outline: none;
+  border-color: #3f72af;
+  box-shadow: 0 0 0 2px rgba(63, 114, 175, 0.2);
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 16px rgba(63, 114, 175, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #cfd8dc;
+  font-size: 15px;
+}
+
+.attendance-table th {
+  background-color: #3f72af;
+  color: white;
+}
+
+.attendance-table tr:hover {
+  background-color: #f1f5fb;
+}
+
+.dashboard h1 {
+  color: #3f72af;
+  margin-top: 20px;
+}
+
+.dashboard h2 {
+  margin-top: 20px;
+  color: #2c5282;
+}
+
+.dashboard button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3f72af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard button:hover {
+  background-color: #2c5282;
+}

@@ -1,0 +1,3419 @@
+{
+  "teachers": [
+    {
+      "id": "1",
+      "t-id": "T001",
+      "name": "Mr. Senthil Kumar",
+      "email": "stp@school.com",
+      "password": "1"
+    },
+    {
+      "id": "2",
+      "t-id": "T002",
+      "name": "Mr. Venkatesh Ravi",
+      "email": "svr@school.com",
+      "password": "teach456"
+    },
+    {
+      "id": "3",
+      "t-id": "T003",
+      "name": "Ms. Anitha Rajalakshmi",
+      "email": "arj@school.com",
+      "password": "teach789"
+    }
+  ],
+  "teachers-schedule": [
+    {
+      "t-id": "T001",
+      "week": [
+        {
+          "day": "Monday",
+          "periods": [
+            {
+              "period": 1,
+              "dept": "IT-I",
+              "subject": "Operating Systems",
+              "id": "ab38"
+            },
+            {
+              "period": 2,
+              "dept": "CSE-I",
+              "subject": "Computer Networks",
+              "id": "8f77"
+            },
+            {
+              "period": 3,
+              "dept": "ECE-I",
+              "subject": "Microprocessors",
+              "id": "37e4"
+            },
+            {
+              "period": 4,
+              "dept": "CSE-II",
+              "subject": "Software Engineering",
+              "id": "660d"
+            },
+            {
+              "period": 5,
+              "dept": "MECH-I",
+              "subject": "Thermodynamics",
+              "id": "08f3"
+            },
+            {
+              "period": 6,
+              "dept": "IT-III",
+              "subject": "Cloud Computing",
+              "id": "62de"
+            },
+            {
+              "period": 7,
+              "dept": "CIVIL-III",
+              "subject": "Concrete Technology",
+              "id": "738f"
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "periods": [
+            {
+              "period": 1,
+              "dept": "IT-I",
+              "subject": "Operating Systems",
+              "id": "ab38"
+            },
+            {
+              "period": 2,
+              "dept": "CSE-I",
+              "subject": "Computer Networks",
+              "id": "8f77"
+            },
+            {
+              "period": 3,
+              "dept": "ECE-I",
+              "subject": "Microprocessors",
+              "id": "37e4"
+            },
+            {
+              "period": 4,
+              "dept": "CSE-II",
+              "subject": "Software Engineering",
+              "id": "660d"
+            },
+            {
+              "period": 5,
+              "dept": "MECH-I",
+              "subject": "Thermodynamics",
+              "id": "08f3"
+            },
+            {
+              "period": 6,
+              "dept": "IT-III",
+              "subject": "Cloud Computing",
+              "id": "62de"
+            },
+            {
+              "period": 7,
+              "dept": "CIVIL-III",
+              "subject": "Concrete Technology",
+              "id": "738f"
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "periods": [
+            {
+              "period": 1,
+              "dept": "IT-I",
+              "subject": "Operating Systems",
+              "id": "ab38"
+            },
+            {
+              "period": 2,
+              "dept": "CSE-I",
+              "subject": "Computer Networks",
+              "id": "8f77"
+            },
+            {
+              "period": 3,
+              "dept": "ECE-I",
+              "subject": "Microprocessors",
+              "id": "37e4"
+            },
+            {
+              "period": 4,
+              "dept": "CSE-II",
+              "subject": "Software Engineering",
+              "id": "660d"
+            },
+            {
+              "period": 5,
+              "dept": "MECH-I",
+              "subject": "Thermodynamics",
+              "id": "08f3"
+            },
+            {
+              "period": 6,
+              "dept": "IT-III",
+              "subject": "Cloud Computing",
+              "id": "62de"
+            },
+            {
+              "period": 7,
+              "dept": "CIVIL-III",
+              "subject": "Concrete Technology",
+              "id": "738f"
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "periods": [
+            {
+              "period": 1,
+              "dept": "IT-I",
+              "subject": "Operating Systems",
+              "id": "ab38"
+            },
+            {
+              "period": 2,
+              "dept": "CSE-I",
+              "subject": "Computer Networks",
+              "id": "8f77"
+            },
+            {
+              "period": 3,
+              "dept": "ECE-I",
+              "subject": "Microprocessors",
+              "id": "37e4"
+            },
+            {
+              "period": 4,
+              "dept": "CSE-II",
+              "subject": "Software Engineering",
+              "id": "660d"
+            },
+            {
+              "period": 5,
+              "dept": "MECH-I",
+              "subject": "Thermodynamics",
+              "id": "08f3"
+            },
+            {
+              "period": 6,
+              "dept": "IT-III",
+              "subject": "Cloud Computing",
+              "id": "62de"
+            },
+            {
+              "period": 7,
+              "dept": "CIVIL-III",
+              "subject": "Concrete Technology",
+              "id": "738f"
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "periods": [
+            {
+              "period": 1,
+              "dept": "IT-I",
+              "subject": "Operating Systems",
+              "id": "ab38"
+            },
+            {
+              "period": 2,
+              "dept": "CSE-I",
+              "subject": "Computer Networks",
+              "id": "8f77"
+            },
+            {
+              "period": 3,
+              "dept": "ECE-I",
+              "subject": "Microprocessors",
+              "id": "37e4"
+            },
+            {
+              "period": 4,
+              "dept": "CSE-II",
+              "subject": "Software Engineering",
+              "id": "660d"
+            },
+            {
+              "period": 5,
+              "dept": "MECH-I",
+              "subject": "Thermodynamics",
+              "id": "08f3"
+            },
+            {
+              "period": 6,
+              "dept": "IT-III",
+              "subject": "Cloud Computing",
+              "id": "62de"
+            },
+            {
+              "period": 7,
+              "dept": "CIVIL-III",
+              "subject": "Concrete Technology",
+              "id": "738f"
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "periods": [
+            {
+              "period": 1,
+              "dept": "IT-I",
+              "subject": "Operating Systems",
+              "id": "ab38"
+            },
+            {
+              "period": 2,
+              "dept": "CSE-I",
+              "subject": "Computer Networks",
+              "id": "8f77"
+            },
+            {
+              "period": 3,
+              "dept": "ECE-I",
+              "subject": "Microprocessors",
+              "id": "37e4"
+            },
+            {
+              "period": 4,
+              "dept": "CSE-II",
+              "subject": "Software Engineering",
+              "id": "660d"
+            },
+            {
+              "period": 5,
+              "dept": "MECH-I",
+              "subject": "Thermodynamics",
+              "id": "08f3"
+            },
+            {
+              "period": 6,
+              "dept": "IT-III",
+              "subject": "Cloud Computing",
+              "id": "62de"
+            },
+            {
+              "period": 7,
+              "dept": "CIVIL-III",
+              "subject": "Concrete Technology",
+              "id": "738f"
+            }
+          ]
+        }
+      ],
+      "id": "3a3b"
+    },
+    {
+      "t-id": "T002",
+      "week": [
+        {
+          "day": "Monday",
+          "periods": []
+        },
+        {
+          "day": "Tuesday",
+          "periods": []
+        },
+        {
+          "day": "Wednesday",
+          "periods": []
+        },
+        {
+          "day": "Thursday",
+          "periods": []
+        },
+        {
+          "day": "Friday",
+          "periods": []
+        },
+        {
+          "day": "Saturday",
+          "periods": []
+        }
+      ],
+      "id": "67d8"
+    },
+    {
+      "t-id": "T003",
+      "week": [
+        {
+          "day": "Monday",
+          "periods": []
+        },
+        {
+          "day": "Tuesday",
+          "periods": []
+        },
+        {
+          "day": "Wednesday",
+          "periods": []
+        },
+        {
+          "day": "Thursday",
+          "periods": []
+        },
+        {
+          "day": "Friday",
+          "periods": []
+        },
+        {
+          "day": "Saturday",
+          "periods": []
+        }
+      ],
+      "id": "bb95"
+    },
+    {
+      "id": "477d",
+      "t-id": "T002",
+      "week": [
+        {
+          "day": "Monday",
+          "periods": [
+            {
+              "period": 1,
+              "dept": "IT-I",
+              "subject": "OS",
+              "id": "1s0p"
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "periods": []
+        },
+        {
+          "day": "Wednesday",
+          "periods": []
+        },
+        {
+          "day": "Thursday",
+          "periods": []
+        },
+        {
+          "day": "Friday",
+          "periods": []
+        },
+        {
+          "day": "Saturday",
+          "periods": []
+        }
+      ]
+    }
+  ],
+  "students": [
+    {
+      "id": "S001",
+      "name": "Kiran",
+      "roll": "101",
+      "classId": "IT-I",
+      "email": "kiran1@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S002",
+      "name": "Lavanya",
+      "roll": "102",
+      "classId": "IT-I",
+      "email": "lavanya2@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S003",
+      "name": "Aishwarya",
+      "roll": "103",
+      "classId": "IT-I",
+      "email": "aishwarya3@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S004",
+      "name": "Kavya",
+      "roll": "104",
+      "classId": "IT-I",
+      "email": "kavya4@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S005",
+      "name": "Kiran",
+      "roll": "105",
+      "classId": "IT-I",
+      "email": "kiran5@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S006",
+      "name": "Arun",
+      "roll": "106",
+      "classId": "IT-I",
+      "email": "arun6@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S007",
+      "name": "Kiran",
+      "roll": "107",
+      "classId": "IT-I",
+      "email": "kiran7@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S008",
+      "name": "Aishwarya",
+      "roll": "108",
+      "classId": "IT-I",
+      "email": "aishwarya8@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S009",
+      "name": "Ganesh",
+      "roll": "109",
+      "classId": "IT-I",
+      "email": "ganesh9@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S010",
+      "name": "Sneha",
+      "roll": "110",
+      "classId": "IT-I",
+      "email": "sneha10@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S011",
+      "name": "Aishwarya",
+      "roll": "111",
+      "classId": "CSE-I",
+      "email": "aishwarya11@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S012",
+      "name": "Rahul",
+      "roll": "112",
+      "classId": "CSE-I",
+      "email": "rahul12@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S013",
+      "name": "Arun",
+      "roll": "113",
+      "classId": "CSE-I",
+      "email": "arun13@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S014",
+      "name": "Sathish",
+      "roll": "114",
+      "classId": "CSE-I",
+      "email": "sathish14@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S015",
+      "name": "Priya",
+      "roll": "115",
+      "classId": "CSE-I",
+      "email": "priya15@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S016",
+      "name": "Suresh",
+      "roll": "116",
+      "classId": "CSE-I",
+      "email": "suresh16@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S017",
+      "name": "Vijay",
+      "roll": "117",
+      "classId": "CSE-I",
+      "email": "vijay17@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S018",
+      "name": "Ravi",
+      "roll": "118",
+      "classId": "CSE-I",
+      "email": "ravi18@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S019",
+      "name": "Naveen",
+      "roll": "119",
+      "classId": "CSE-I",
+      "email": "naveen19@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S020",
+      "name": "Aishwarya",
+      "roll": "120",
+      "classId": "CSE-I",
+      "email": "aishwarya20@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S021",
+      "name": "Naveen",
+      "roll": "121",
+      "classId": "IT-III",
+      "email": "naveen21@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S022",
+      "name": "Ganesh",
+      "roll": "122",
+      "classId": "IT-III",
+      "email": "ganesh22@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S023",
+      "name": "Sathish",
+      "roll": "123",
+      "classId": "IT-III",
+      "email": "sathish23@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S024",
+      "name": "Nithya",
+      "roll": "124",
+      "classId": "IT-III",
+      "email": "nithya24@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S025",
+      "name": "Aishwarya",
+      "roll": "125",
+      "classId": "IT-III",
+      "email": "aishwarya25@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S026",
+      "name": "Aishwarya",
+      "roll": "126",
+      "classId": "IT-III",
+      "email": "aishwarya26@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S027",
+      "name": "Ganesh",
+      "roll": "127",
+      "classId": "IT-III",
+      "email": "ganesh27@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S028",
+      "name": "Kavya",
+      "roll": "128",
+      "classId": "IT-III",
+      "email": "kavya28@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S029",
+      "name": "Naveen",
+      "roll": "129",
+      "classId": "IT-III",
+      "email": "naveen29@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S030",
+      "name": "Sneha",
+      "roll": "130",
+      "classId": "IT-III",
+      "email": "sneha30@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S031",
+      "name": "Manoj",
+      "roll": "131",
+      "classId": "CSE-II",
+      "email": "manoj31@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S032",
+      "name": "Kavya",
+      "roll": "132",
+      "classId": "CSE-II",
+      "email": "kavya32@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S033",
+      "name": "Sathish",
+      "roll": "133",
+      "classId": "CSE-II",
+      "email": "sathish33@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S034",
+      "name": "Suresh",
+      "roll": "134",
+      "classId": "CSE-II",
+      "email": "suresh34@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S035",
+      "name": "Deepa",
+      "roll": "135",
+      "classId": "CSE-II",
+      "email": "deepa35@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S036",
+      "name": "Sathish",
+      "roll": "136",
+      "classId": "CSE-II",
+      "email": "sathish36@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S037",
+      "name": "Kiran",
+      "roll": "137",
+      "classId": "CSE-II",
+      "email": "kiran37@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S038",
+      "name": "Manoj",
+      "roll": "138",
+      "classId": "CSE-II",
+      "email": "manoj38@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S039",
+      "name": "Deepa",
+      "roll": "139",
+      "classId": "CSE-II",
+      "email": "deepa39@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S040",
+      "name": "Pooja",
+      "roll": "140",
+      "classId": "CSE-II",
+      "email": "pooja40@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S041",
+      "name": "Sneha",
+      "roll": "141",
+      "classId": "ECE-I",
+      "email": "sneha41@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S042",
+      "name": "Kiran",
+      "roll": "142",
+      "classId": "ECE-I",
+      "email": "kiran42@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S043",
+      "name": "Deepa",
+      "roll": "143",
+      "classId": "ECE-I",
+      "email": "deepa43@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S044",
+      "name": "Sathish",
+      "roll": "144",
+      "classId": "ECE-I",
+      "email": "sathish44@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S045",
+      "name": "Nithya",
+      "roll": "145",
+      "classId": "ECE-I",
+      "email": "nithya45@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S046",
+      "name": "Sathish",
+      "roll": "146",
+      "classId": "ECE-I",
+      "email": "sathish46@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S047",
+      "name": "Aishwarya",
+      "roll": "147",
+      "classId": "ECE-I",
+      "email": "aishwarya47@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S048",
+      "name": "Naveen",
+      "roll": "148",
+      "classId": "ECE-I",
+      "email": "naveen48@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S049",
+      "name": "Kiran",
+      "roll": "149",
+      "classId": "ECE-I",
+      "email": "kiran49@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S050",
+      "name": "Sneha",
+      "roll": "150",
+      "classId": "ECE-I",
+      "email": "sneha50@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S051",
+      "name": "Nithya",
+      "roll": "151",
+      "classId": "EEE-II",
+      "email": "nithya51@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S052",
+      "name": "Naveen",
+      "roll": "152",
+      "classId": "EEE-II",
+      "email": "naveen52@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S053",
+      "name": "Vijay",
+      "roll": "153",
+      "classId": "EEE-II",
+      "email": "vijay53@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S054",
+      "name": "Rahul",
+      "roll": "154",
+      "classId": "EEE-II",
+      "email": "rahul54@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S055",
+      "name": "Ravi",
+      "roll": "155",
+      "classId": "EEE-II",
+      "email": "ravi55@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S056",
+      "name": "Arun",
+      "roll": "156",
+      "classId": "EEE-II",
+      "email": "arun56@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S057",
+      "name": "Kiran",
+      "roll": "157",
+      "classId": "EEE-II",
+      "email": "kiran57@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S058",
+      "name": "Kiran",
+      "roll": "158",
+      "classId": "EEE-II",
+      "email": "kiran58@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S059",
+      "name": "Suresh",
+      "roll": "159",
+      "classId": "EEE-II",
+      "email": "suresh59@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S060",
+      "name": "Lavanya",
+      "roll": "160",
+      "classId": "EEE-II",
+      "email": "lavanya60@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S061",
+      "name": "Vijay",
+      "roll": "161",
+      "classId": "MECH-I",
+      "email": "vijay61@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S062",
+      "name": "Deepa",
+      "roll": "162",
+      "classId": "MECH-I",
+      "email": "deepa62@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S063",
+      "name": "Suresh",
+      "roll": "163",
+      "classId": "MECH-I",
+      "email": "suresh63@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S064",
+      "name": "Suresh",
+      "roll": "164",
+      "classId": "MECH-I",
+      "email": "suresh64@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S065",
+      "name": "Manoj",
+      "roll": "165",
+      "classId": "MECH-I",
+      "email": "manoj65@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S066",
+      "name": "Ganesh",
+      "roll": "166",
+      "classId": "MECH-I",
+      "email": "ganesh66@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S067",
+      "name": "Aishwarya",
+      "roll": "167",
+      "classId": "MECH-I",
+      "email": "aishwarya67@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S068",
+      "name": "Kiran",
+      "roll": "168",
+      "classId": "MECH-I",
+      "email": "kiran68@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S069",
+      "name": "Ganesh",
+      "roll": "169",
+      "classId": "MECH-I",
+      "email": "ganesh69@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S070",
+      "name": "Vijay",
+      "roll": "170",
+      "classId": "MECH-I",
+      "email": "vijay70@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S071",
+      "name": "Vijay",
+      "roll": "171",
+      "classId": "CIVIL-III",
+      "email": "vijay71@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S072",
+      "name": "Arun",
+      "roll": "172",
+      "classId": "CIVIL-III",
+      "email": "arun72@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S073",
+      "name": "Kavya",
+      "roll": "173",
+      "classId": "CIVIL-III",
+      "email": "kavya73@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S074",
+      "name": "Nithya",
+      "roll": "174",
+      "classId": "CIVIL-III",
+      "email": "nithya74@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S075",
+      "name": "Pooja",
+      "roll": "175",
+      "classId": "CIVIL-III",
+      "email": "pooja75@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S076",
+      "name": "Deepa",
+      "roll": "176",
+      "classId": "CIVIL-III",
+      "email": "deepa76@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S077",
+      "name": "Vijay",
+      "roll": "177",
+      "classId": "CIVIL-III",
+      "email": "vijay77@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S078",
+      "name": "Ganesh",
+      "roll": "178",
+      "classId": "CIVIL-III",
+      "email": "ganesh78@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S079",
+      "name": "Kavya",
+      "roll": "179",
+      "classId": "CIVIL-III",
+      "email": "kavya79@student.com",
+      "password": "pass123"
+    },
+    {
+      "id": "S080",
+      "name": "Aishwarya",
+      "roll": "180",
+      "classId": "CIVIL-III",
+      "email": "aishwarya80@student.com",
+      "password": "pass123"
+    }
+  ],
+  "class-schedules": [
+    {
+      "classId": "IT-I",
+      "week": [
+        {
+          "day": "Monday",
+          "schedule": [
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Python Programming"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            },
+            {
+              "period": 5,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Python Programming"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            },
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems "
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Python Programming"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            },
+            {
+              "period": 5,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Python Programming"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Python Programming"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            },
+            {
+              "period": 5,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Python Programming"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Python Programming"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            },
+            {
+              "period": 5,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Python Programming"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Python Programming"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            },
+            {
+              "period": 5,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Python Programming"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Python Programming"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            },
+            {
+              "period": 5,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Python Programming"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Operating Systems"
+            }
+          ]
+        }
+      ],
+      "id": "6801"
+    },
+    {
+      "classId": "CSE-I",
+      "week": [
+        {
+          "day": "Monday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Computer Networks"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Object Oriented Programming"
+            },
+            {
+              "period": 4,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Object Oriented Programming"
+            },
+            {
+              "period": 5,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 6,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Computer Networks"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Computer Networks"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Object Oriented Programming"
+            },
+            {
+              "period": 4,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Object Oriented Programming"
+            },
+            {
+              "period": 5,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 6,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Computer Networks"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Computer Networks"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Object Oriented Programming"
+            },
+            {
+              "period": 4,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Object Oriented Programming"
+            },
+            {
+              "period": 5,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 6,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Computer Networks"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Computer Networks"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Object Oriented Programming"
+            },
+            {
+              "period": 4,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Object Oriented Programming"
+            },
+            {
+              "period": 5,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 6,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Computer Networks"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Computer Networks"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Object Oriented Programming"
+            },
+            {
+              "period": 4,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Object Oriented Programming"
+            },
+            {
+              "period": 5,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 6,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Computer Networks"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Computer Networks"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Object Oriented Programming"
+            },
+            {
+              "period": 4,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Object Oriented Programming"
+            },
+            {
+              "period": 5,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 6,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Computer Networks"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            }
+          ]
+        }
+      ],
+      "id": "5c20"
+    },
+    {
+      "classId": "IT-III",
+      "week": [
+        {
+          "day": "Monday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 2,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 3,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            },
+            {
+              "period": 4,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Machine Learning"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Machine Learning"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 2,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 3,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            },
+            {
+              "period": 4,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Machine Learning"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Machine Learning"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 2,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 3,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            },
+            {
+              "period": 4,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Machine Learning"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Machine Learning"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 2,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 3,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            },
+            {
+              "period": 4,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Machine Learning"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Machine Learning"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 2,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 3,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            },
+            {
+              "period": 4,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Machine Learning"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Machine Learning"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 2,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Web Technologies"
+            },
+            {
+              "period": 3,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            },
+            {
+              "period": 4,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Machine Learning"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Machine Learning"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Cloud Computing"
+            }
+          ]
+        }
+      ],
+      "id": "d799"
+    },
+    {
+      "classId": "CSE-II",
+      "week": [
+        {
+          "day": "Monday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Software Engineering"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Software Engineering"
+            },
+            {
+              "period": 3,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 4,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Database Systems"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Database Systems"
+            },
+            {
+              "period": 7,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Software Engineering"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Software Engineering"
+            },
+            {
+              "period": 3,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 4,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Database Systems"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Database Systems"
+            },
+            {
+              "period": 7,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Software Engineering"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Software Engineering"
+            },
+            {
+              "period": 3,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 4,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Database Systems"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Database Systems"
+            },
+            {
+              "period": 7,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Software Engineering"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Software Engineering"
+            },
+            {
+              "period": 3,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 4,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Database Systems"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Database Systems"
+            },
+            {
+              "period": 7,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Software Engineering"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Software Engineering"
+            },
+            {
+              "period": 3,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 4,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Database Systems"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Database Systems"
+            },
+            {
+              "period": 7,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Software Engineering"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Software Engineering"
+            },
+            {
+              "period": 3,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 4,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Data Structures"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Database Systems"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Database Systems"
+            },
+            {
+              "period": 7,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            }
+          ]
+        }
+      ],
+      "id": "4e1b"
+    },
+    {
+      "classId": "ECE-I",
+      "week": [
+        {
+          "day": "Monday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Digital Circuits"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Digital Circuits"
+            },
+            {
+              "period": 3,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Analog Communication"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Analog Communication"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Digital Circuits"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Digital Circuits"
+            },
+            {
+              "period": 3,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Analog Communication"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Analog Communication"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Digital Circuits"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Digital Circuits"
+            },
+            {
+              "period": 3,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Analog Communication"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Analog Communication"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Digital Circuits"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Digital Circuits"
+            },
+            {
+              "period": 3,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Analog Communication"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Analog Communication"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Digital Circuits"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Digital Circuits"
+            },
+            {
+              "period": 3,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Analog Communication"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Analog Communication"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Digital Circuits"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Digital Circuits"
+            },
+            {
+              "period": 3,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Analog Communication"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Analog Communication"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            }
+          ]
+        }
+      ],
+      "id": "9745"
+    },
+    {
+      "classId": "EEE-II",
+      "week": [
+        {
+          "day": "Monday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 2,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Power Systems"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Power Systems"
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 2,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Power Systems"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Power Systems"
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 2,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Power Systems"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Power Systems"
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 2,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Power Systems"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Power Systems"
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 2,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Power Systems"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Power Systems"
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 2,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Control Systems"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Microprocessors"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Power Systems"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Power Systems"
+            }
+          ]
+        }
+      ],
+      "id": "f383"
+    },
+    {
+      "classId": "MECH-I",
+      "week": [
+        {
+          "day": "Monday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Mechanics"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Fluid Mechanics"
+            },
+            {
+              "period": 3,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Fluid Mechanics"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Mechanics"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Mechanics"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Fluid Mechanics"
+            },
+            {
+              "period": 3,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Fluid Mechanics"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Mechanics"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Mechanics"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Fluid Mechanics"
+            },
+            {
+              "period": 3,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Fluid Mechanics"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Mechanics"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Mechanics"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Fluid Mechanics"
+            },
+            {
+              "period": 3,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Fluid Mechanics"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Mechanics"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Mechanics"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Fluid Mechanics"
+            },
+            {
+              "period": 3,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Fluid Mechanics"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Mechanics"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Mechanics"
+            },
+            {
+              "period": 2,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Fluid Mechanics"
+            },
+            {
+              "period": 3,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Fluid Mechanics"
+            },
+            {
+              "period": 4,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            },
+            {
+              "period": 5,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            },
+            {
+              "period": 6,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Mechanics"
+            },
+            {
+              "period": 7,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Thermodynamics"
+            }
+          ]
+        }
+      ],
+      "id": "6db3"
+    },
+    {
+      "classId": "CIVIL-III",
+      "week": [
+        {
+          "day": "Monday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Concrete Technology"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Concrete Technology"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 4,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Structural Design"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Structural Design"
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Concrete Technology"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Concrete Technology"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 4,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Structural Design"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Structural Design"
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Concrete Technology"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Concrete Technology"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 4,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Structural Design"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Structural Design"
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Concrete Technology"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Concrete Technology"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 4,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Structural Design"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Structural Design"
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Concrete Technology"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Concrete Technology"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 4,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Structural Design"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Structural Design"
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "schedule": [
+            {
+              "period": 1,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Concrete Technology"
+            },
+            {
+              "period": 2,
+              "t-id": "T001",
+              "teacher": "Mr. Senthil Kumar",
+              "subject": "Concrete Technology"
+            },
+            {
+              "period": 3,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 4,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 5,
+              "t-id": "T003",
+              "teacher": "Ms. Anitha Rajalakshmi",
+              "subject": "Data Mining"
+            },
+            {
+              "period": 6,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Structural Design"
+            },
+            {
+              "period": 7,
+              "t-id": "T002",
+              "teacher": "Mr. Venkatesh Ravi",
+              "subject": "Structural Design"
+            }
+          ]
+        }
+      ],
+      "id": "c302"
+    },
+    {
+      "id": "1eca",
+      "classId": "IT-II",
+      "week": []
+    },
+    {
+      "id": "e680",
+      "classId": "IT-II",
+      "week": []
+    },
+    {
+      "id": "4631",
+      "classId": "IT-II",
+      "week": []
+    }
+  ],
+  "attendance": [
+    {
+      "id": "7038",
+      "studentId": "S001",
+      "name": "Kiran",
+      "classId": "IT-I",
+      "period": 1,
+      "status": "Present",
+      "staff": "Mr. Senthil Kumar",
+      "date": "2025-07-25"
+    }
+  ],
+  "otp": [
+    {
+      "id": "e41f",
+      "period": 1,
+      "dept": "IT-I",
+      "teacher": "Mr. Senthil Kumar",
+      "otp": "779136"
+    },
+    {
+      "id": "97cc",
+      "period": 2,
+      "dept": "ECE-I",
+      "teacher": "Mr. Senthil Kumar",
+      "otp": "391042"
+    },
+    {
+      "id": "8e90",
+      "period": 4,
+      "dept": "IT-I",
+      "teacher": "Mr. Senthil Kumar",
+      "t-id": "T001",
+      "otp": "760221"
+    },
+    {
+      "id": "a87f",
+      "period": 6,
+      "dept": "ECE-I",
+      "teacher": "Mr. Senthil Kumar",
+      "t-id": "T001",
+      "otp": "109249"
+    }
+  ]
+}
