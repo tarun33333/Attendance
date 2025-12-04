@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./styles.css";
 
-const API_URL = "http://localhost:3001/teachers-schedule";
+const API_URL = `${process.env.REACT_APP_BACKEND}/admin/teachers-schedule`;
 
 export default function TeacherScheduleManager() {
   const [teacherSchedules, setTeacherSchedules] = useState([]);
@@ -89,13 +89,13 @@ export default function TeacherScheduleManager() {
 
   const handleDeletePeriod = async (teacherNodeId, day, periodId) => {
     try {
-      const target = teacherSchedules.find((t) => t.id === teacherNodeId);
+      const target = teacherSchedules.find((t) => t.id === teacherNodeId || t._id === teacherNodeId);
       if (!target) return;
       const updated = { ...target };
       const dayEntry = updated.week.find((d) => d.day === day);
       if (!dayEntry) return;
-      dayEntry.periods = dayEntry.periods.filter((p) => p.id !== periodId);
-      await axios.put(`${API_URL}/${teacherNodeId}`, updated);
+      dayEntry.periods = dayEntry.periods.filter((p) => p.id !== periodId && p._id !== periodId);
+      await axios.put(`${API_URL}/${target.id || target._id}`, updated);
       await fetchSchedules();
     } catch (err) {
       console.error(err);
@@ -109,7 +109,6 @@ export default function TeacherScheduleManager() {
       if (!existing) {
         acc[key] = item;
       } else {
-        // prefer the one that has an id (so it's editable)
         acc[key] = existing.id ? existing : item;
       }
       return acc;
@@ -130,7 +129,7 @@ export default function TeacherScheduleManager() {
       </div>
 
       {dedupedByTeacher.map((teacher) => (
-        <div className="card schedule-group" key={teacher.id}>
+        <div className="card schedule-group" key={teacher.id || teacher._id}>
           <h3 className="section-title">Teacher: {teacher["t-id"]}</h3>
           {teacher.week.map((d) => (
             <div className="day-block" key={d.day}>
@@ -140,9 +139,14 @@ export default function TeacherScheduleManager() {
               ) : (
                 <ul className="list">
                   {d.periods.map((p) => (
-                    <li className="list-item" key={p.id}>
+                    <li className="list-item" key={p.id || p._id}>
                       <span>Period {p.period}: {p.subject} [{p.dept}]</span>
-                      <button className="button button--danger" onClick={() => handleDeletePeriod(teacher.id, d.day, p.id)}>Delete</button>
+                      <button
+                        className="button button--danger"
+                        onClick={() => handleDeletePeriod(teacher.id || teacher._id, p.day || d.day, p.id || p._id)}
+                      >
+                        Delete
+                      </button>
                     </li>
                   ))}
                 </ul>

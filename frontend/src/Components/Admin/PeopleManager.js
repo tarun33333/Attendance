@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./styles.css";
 
-const TEACHERS_URL = "http://localhost:3001/teachers";
-const STUDENTS_URL = "http://localhost:3001/students";
+const TEACHERS_URL = `${process.env.REACT_APP_BACKEND}/admin/teachers`;
+const STUDENTS_URL = `${process.env.REACT_APP_BACKEND}/admin/students`;
 
 export default function PeopleManager() {
   const [teachers, setTeachers] = useState([]);

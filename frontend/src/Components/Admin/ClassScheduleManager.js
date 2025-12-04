@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./styles.css";
 
+const API_URL = `${process.env.REACT_APP_BACKEND}/admin/class-schedules`;
+
 export default function ClassScheduleManager() {
   const [schedules, setSchedules] = useState([]);
   const [newClassId, setNewClassId] = useState("");
@@ -10,8 +12,6 @@ export default function ClassScheduleManager() {
   const [newTeacher, setNewTeacher] = useState("");
   const [newTid, setNewTid] = useState("");
   const [newSubject, setNewSubject] = useState("");
-
-  const API_URL = "http://localhost:3001/class-schedules";
 
   // Load schedules
   useEffect(() => {

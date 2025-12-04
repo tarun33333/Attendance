@@ -17,13 +17,10 @@ var indexRouter = require('./routes/index');
 const teachersroutes=require('./routes/teachersroutes');
 const studentsroutes=require('./routes/studentsroutes');
 const otp=require('./routes/otp');
-
-
+const attendanceRoutes = require('./routes/attendance');
+const adminRoutes = require('./routes/admin');
 
 var app = express();
-
-
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -43,6 +40,8 @@ app.use('/index', indexRouter);
 app.use('/teacher',teachersroutes);
 app.use('/student',studentsroutes);
 app.use('/otp',otp);
+app.use('/attendance', attendanceRoutes);
+app.use('/admin', adminRoutes);
 
 
 

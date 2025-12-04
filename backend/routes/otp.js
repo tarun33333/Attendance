@@ -24,5 +24,17 @@ router.post('/otpgen',async (req,res)=>{
     }
 })
 
+// Delete OTP by id (after student uses it)
+router.delete('/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        await Otp.findByIdAndDelete(id);
+        res.status(204).send();
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ msg: "Error deleting OTP" });
+    }
+});
+
 
 module.exports = router;

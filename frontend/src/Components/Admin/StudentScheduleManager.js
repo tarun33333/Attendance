@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./styles.css";
 
+const API_URL = `${process.env.REACT_APP_BACKEND}/admin/class-schedules`;
+
 export default function StudentScheduleManager() {
   const [classSchedules, setClassSchedules] = useState([]);
   const [newClass, setNewClass] = useState({
@@ -11,14 +13,14 @@ export default function StudentScheduleManager() {
 
   // Fetch class schedules
   useEffect(() => {
-    axios.get("http://localhost:3001/class-schedules")
+    axios.get(API_URL)
       .then(res => setClassSchedules(res.data))
       .catch(err => console.error(err));
   }, []);
 
   // Add class schedule
   const handleAdd = () => {
-    axios.post("http://localhost:3001/class-schedules", newClass)
+    axios.post(API_URL, newClass)
       .then(res => setClassSchedules([...classSchedules, res.data]))
       .catch(err => console.error(err));
   };
