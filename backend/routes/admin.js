@@ -45,6 +45,18 @@ router.delete('/teachers/:id', async (req, res) => {
   }
 });
 
+router.put('/teachers/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const updated = await Teachers.findByIdAndUpdate(id, req.body, { new: true });
+    if (!updated) return res.status(404).json({ msg: 'Teacher not found' });
+    res.status(200).json(withId(updated));
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ msg: 'Error updating teacher' });
+  }
+});
+
 // ----- Students CRUD -----
 router.get('/students', async (req, res) => {
   try {
@@ -74,6 +86,18 @@ router.delete('/students/:id', async (req, res) => {
   } catch (err) {
     console.error(err);
     res.status(500).json({ msg: 'Error deleting student' });
+  }
+});
+
+router.put('/students/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const updated = await Students.findByIdAndUpdate(id, req.body, { new: true });
+    if (!updated) return res.status(404).json({ msg: 'Student not found' });
+    res.status(200).json(withId(updated));
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ msg: 'Error updating student' });
   }
 });
 

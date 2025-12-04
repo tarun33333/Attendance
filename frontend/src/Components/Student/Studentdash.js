@@ -12,6 +12,7 @@ export default function Studentdash() {
 
   const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   const today = days[new Date().getDay()];
+  const dateStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
   useEffect(() => {
     if (!user || !user.classId) return;
@@ -85,44 +86,72 @@ export default function Studentdash() {
 
   return (
     <div className='student-dashboard'>
-      <h1>Welcome, {user.name}!! ☺️</h1>
-      <h2>Today's Schedule ({today})</h2>
-      <div className="student-class-list">
-        {schedule.map(x => {
-          // OTP exists if there is any OTP for this class & period
-          const otpForPeriod = otps.find(o =>
-            o.dept === user.classId &&
-            o.period === x.period
-          );
-          return (
-            <div key={`${x.dept || 'cls'}-${x.period}`} className="student-class-card">
-              <h3>{x.dept || x.subject}</h3>
-              <h4>Period: {x.period}</h4>
-              <h4>Subject: {x.subject}</h4>
-              <h3>{x.teacher}</h3>
-              {attendance[x.period] ? (
-                <h4>Marked Present</h4>
-              ) : otpForPeriod ? (
-                <div>
-                  <input
-                    type='number'
-                    value={otpInput[x.period] || ""}
-                    onChange={(e) => setOtpInput(prev => ({ ...prev, [x.period]: e.target.value }))}
-                  />
-                  <button
-                    className="student-otp-button"
-                    onClick={() => handleOtpSubmit(x.period, x.dept)}
-                  >
-                    OTP
-                  </button>
+      <header className="dashboard-header">
+        <div className="header-content">
+          <h1>Welcome back, {user.name}</h1>
+          <p className="date-display">{today}, {dateStr}</p>
+        </div>
+        <div className="user-avatar">
+          {user.name.charAt(0)}
+        </div>
+      </header>
+
+      <main className="dashboard-content">
+        <h2 className="section-title">Today's Schedule</h2>
+        <div className="student-class-list">
+          {schedule.length > 0 ? (
+            schedule.map(x => {
+              const otpForPeriod = otps.find(o =>
+                o.dept === user.classId &&
+                o.period === x.period
+              );
+              return (
+                <div key={`${x.dept || 'cls'}-${x.period}`} className="student-class-card">
+                  <div className="card-header">
+                    <span className="period-badge">Period {x.period}</span>
+                    <span className="subject-name">{x.subject}</span>
+                  </div>
+                  <div className="card-body">
+                    <div className="teacher-info">
+                      <span className="label">Teacher</span>
+                      <span className="value">{x.teacher}</span>
+                    </div>
+                    {attendance[x.period] ? (
+                      <div className="status-badge present">
+                        <span className="icon">✓</span> Marked Present
+                      </div>
+                    ) : otpForPeriod ? (
+                      <div className="otp-section">
+                        <input
+                          type='number'
+                          placeholder="Enter OTP"
+                          className="otp-input"
+                          value={otpInput[x.period] || ""}
+                          onChange={(e) => setOtpInput(prev => ({ ...prev, [x.period]: e.target.value }))}
+                        />
+                        <button
+                          className="student-otp-button"
+                          onClick={() => handleOtpSubmit(x.period, x.dept)}
+                        >
+                          Submit OTP
+                        </button>
+                      </div>
+                    ) : (
+                      <div className="status-badge waiting">
+                        Waiting for OTP...
+                      </div>
+                    )}
+                  </div>
                 </div>
-              ) : (
-                <div style={{ color: '#888' }}>No OTP generated yet</div>
-              )}
+              );
+            })
+          ) : (
+            <div className="no-schedule">
+              <p>No classes scheduled for today.</p>
             </div>
-          );
-        })}
-      </div>
+          )}
+        </div>
+      </main>
     </div>
   );
 }

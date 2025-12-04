@@ -6,25 +6,17 @@ const TEACHERS_URL = `${process.env.REACT_APP_BACKEND}/admin/teachers`;
 const STUDENTS_URL = `${process.env.REACT_APP_BACKEND}/admin/students`;
 
 export default function PeopleManager() {
+  const [activeTab, setActiveTab] = useState("teachers"); // 'teachers' | 'students'
   const [teachers, setTeachers] = useState([]);
   const [students, setStudents] = useState([]);
+  const [loading, setLoading] = useState(false);
 
-  const [newTeacher, setNewTeacher] = useState({
-    "t-id": "",
-    name: "",
-    email: "",
-    password: ""
-  });
-
-  const [newStudent, setNewStudent] = useState({
-    name: "",
-    roll: "",
-    classId: "",
-    email: "",
-    password: ""
-  });
+  // Form State
+  const [formData, setFormData] = useState({});
+  const [editingId, setEditingId] = useState(null);
 
   const fetchAll = async () => {
+    setLoading(true);
     try {
       const [tRes, sRes] = await Promise.all([
         axios.get(TEACHERS_URL),
@@ -34,6 +26,9 @@ export default function PeopleManager() {
       setStudents(sRes.data);
     } catch (err) {
       console.error(err);
+      alert("Failed to fetch data");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -41,99 +36,276 @@ export default function PeopleManager() {
     fetchAll();
   }, []);
 
-  const addTeacher = async () => {
-    const { ["t-id"]: teacherId, name, email, password } = newTeacher;
-    if (!teacherId || !name || !email || !password) {
-      alert("Fill all teacher fields");
-      return;
-    }
+  // Reset form when tab changes
+  useEffect(() => {
+    setEditingId(null);
+    setFormData({});
+  }, [activeTab]);
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleEdit = (item) => {
+    setEditingId(item.id);
+    setFormData(item);
+  };
+
+  const handleCancel = () => {
+    setEditingId(null);
+    setFormData({});
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const isTeacher = activeTab === "teachers";
+    const url = isTeacher ? TEACHERS_URL : STUDENTS_URL;
+
     try {
-      await axios.post(TEACHERS_URL, newTeacher);
+      if (editingId) {
+        // Update
+        await axios.put(`${url}/${editingId}`, formData);
+      } else {
+        // Create
+        await axios.post(url, formData);
+      }
       await fetchAll();
-      setNewTeacher({ "t-id": "", name: "", email: "", password: "" });
+      handleCancel();
     } catch (err) {
       console.error(err);
+      alert("Operation failed");
     }
   };
 
-  const deleteTeacher = async (id) => {
+  const handleDelete = async (id, e) => {
+    e.stopPropagation(); // Prevent triggering edit
+    if (!window.confirm("Are you sure?")) return;
+
+    const isTeacher = activeTab === "teachers";
+    const url = isTeacher ? TEACHERS_URL : STUDENTS_URL;
+
     try {
-      await axios.delete(`${TEACHERS_URL}/${id}`);
+      await axios.delete(`${url}/${id}`);
+      if (editingId === id) handleCancel();
       await fetchAll();
     } catch (err) {
       console.error(err);
+      alert("Delete failed");
     }
   };
 
-  const addStudent = async () => {
-    const { name, roll, classId, email, password } = newStudent;
-    if (!name || !roll || !classId || !email || !password) {
-      alert("Fill all student fields");
-      return;
-    }
-    try {
-      await axios.post(STUDENTS_URL, newStudent);
-      await fetchAll();
-      setNewStudent({ name: "", roll: "", classId: "", email: "", password: "" });
-    } catch (err) {
-      console.error(err);
-    }
-  };
+  // Render Helpers
+  const renderTeacherForm = () => (
+    <form onSubmit={handleSubmit}>
+      <div className="form-group">
+        <label className="form-label">Teacher ID</label>
+        <input
+          className="input"
+          name="t-id"
+          value={formData["t-id"] || ""}
+          onChange={handleInputChange}
+          placeholder="e.g. T-101"
+          required
+        />
+      </div>
+      <div className="form-group">
+        <label className="form-label">Name</label>
+        <input
+          className="input"
+          name="name"
+          value={formData.name || ""}
+          onChange={handleInputChange}
+          placeholder="Full Name"
+          required
+        />
+      </div>
+      <div className="form-group">
+        <label className="form-label">Email</label>
+        <input
+          className="input"
+          type="email"
+          name="email"
+          value={formData.email || ""}
+          onChange={handleInputChange}
+          placeholder="email@example.com"
+          required
+        />
+      </div>
+      <div className="form-group">
+        <label className="form-label">Password</label>
+        <input
+          className="input"
+          name="password"
+          value={formData.password || ""}
+          onChange={handleInputChange}
+          placeholder={editingId ? "Leave blank to keep same" : "Password"}
+          required={!editingId}
+        />
+      </div>
+      <div className="form-actions">
+        <button type="submit" className="button button--primary button--full">
+          {editingId ? "Update Teacher" : "Add Teacher"}
+        </button>
+        {editingId && (
+          <button type="button" className="button button--secondary" onClick={handleCancel}>
+            Cancel
+          </button>
+        )}
+      </div>
+    </form>
+  );
 
-  const deleteStudent = async (id) => {
-    try {
-      await axios.delete(`${STUDENTS_URL}/${id}`);
-      await fetchAll();
-    } catch (err) {
-      console.error(err);
-    }
-  };
+  const renderStudentForm = () => (
+    <form onSubmit={handleSubmit}>
+      <div className="form-group">
+        <label className="form-label">Full Name</label>
+        <input
+          className="input"
+          name="name"
+          value={formData.name || ""}
+          onChange={handleInputChange}
+          placeholder="Student Name"
+          required
+        />
+      </div>
+      <div className="form-group">
+        <label className="form-label">Roll Number</label>
+        <input
+          className="input"
+          name="roll"
+          value={formData.roll || ""}
+          onChange={handleInputChange}
+          placeholder="e.g. 12345"
+          required
+        />
+      </div>
+      <div className="form-group">
+        <label className="form-label">Class ID</label>
+        <input
+          className="input"
+          name="classId"
+          value={formData.classId || ""}
+          onChange={handleInputChange}
+          placeholder="e.g. IT-A"
+          required
+        />
+      </div>
+      <div className="form-group">
+        <label className="form-label">Email</label>
+        <input
+          className="input"
+          type="email"
+          name="email"
+          value={formData.email || ""}
+          onChange={handleInputChange}
+          placeholder="student@example.com"
+          required
+        />
+      </div>
+      <div className="form-group">
+        <label className="form-label">Password</label>
+        <input
+          className="input"
+          name="password"
+          value={formData.password || ""}
+          onChange={handleInputChange}
+          placeholder={editingId ? "Leave blank to keep same" : "Password"}
+          required={!editingId}
+        />
+      </div>
+      <div className="form-actions">
+        <button type="submit" className="button button--primary button--full">
+          {editingId ? "Update Student" : "Add Student"}
+        </button>
+        {editingId && (
+          <button type="button" className="button button--secondary" onClick={handleCancel}>
+            Cancel
+          </button>
+        )}
+      </div>
+    </form>
+  );
 
   return (
     <div className="admin-container">
-      <h2 className="admin-title">People Manager (Teachers & Students)</h2>
+      <div className="admin-header">
+        <h2 className="admin-title">People Management</h2>
+        <p className="admin-subtitle">Manage teachers and students records</p>
+      </div>
+
+      <div className="tabs">
+        <button
+          className={`tab-button ${activeTab === "teachers" ? "active" : ""}`}
+          onClick={() => setActiveTab("teachers")}
+        >
+          Teachers
+        </button>
+        <button
+          className={`tab-button ${activeTab === "students" ? "active" : ""}`}
+          onClick={() => setActiveTab("students")}
+        >
+          Students
+        </button>
+      </div>
 
       <div className="admin-grid">
+        {/* Left Column: Form */}
         <div className="card">
-          <h3 className="section-title">Add Teacher</h3>
-          <div className="form-row">
-            <input className="input" placeholder="Teacher ID (t-id)" value={newTeacher["t-id"]} onChange={(e) => setNewTeacher({ ...newTeacher, "t-id": e.target.value })} />
-            <input className="input" placeholder="Name" value={newTeacher.name} onChange={(e) => setNewTeacher({ ...newTeacher, name: e.target.value })} />
-            <input className="input" placeholder="Email" value={newTeacher.email} onChange={(e) => setNewTeacher({ ...newTeacher, email: e.target.value })} />
-            <input className="input" placeholder="Password" value={newTeacher.password} onChange={(e) => setNewTeacher({ ...newTeacher, password: e.target.value })} />
-            <button className="button button--primary" onClick={addTeacher}>Add Teacher</button>
-          </div>
-          <ul className="list">
-            {teachers.map((t) => (
-              <li className="list-item" key={t.id}>
-                <span>{t["t-id"]} - {t.name} ({t.email})</span>
-                <button className="button button--danger" onClick={() => deleteTeacher(t.id)}>Delete</button>
-              </li>
-            ))}
-          </ul>
+          <h3 className="section-title">
+            {editingId ? "Edit Details" : `Add New ${activeTab === "teachers" ? "Teacher" : "Student"}`}
+          </h3>
+          {activeTab === "teachers" ? renderTeacherForm() : renderStudentForm()}
         </div>
 
+        {/* Right Column: List */}
         <div className="card">
-          <h3 className="section-title">Add Student</h3>
-          <div className="form-row">
-            <input className="input" placeholder="Name" value={newStudent.name} onChange={(e) => setNewStudent({ ...newStudent, name: e.target.value })} />
-            <input className="input" placeholder="Roll" value={newStudent.roll} onChange={(e) => setNewStudent({ ...newStudent, roll: e.target.value })} />
-            <input className="input" placeholder="Class ID (e.g., IT-I)" value={newStudent.classId} onChange={(e) => setNewStudent({ ...newStudent, classId: e.target.value })} />
-            <input className="input" placeholder="Email" value={newStudent.email} onChange={(e) => setNewStudent({ ...newStudent, email: e.target.value })} />
-            <input className="input" placeholder="Password" value={newStudent.password} onChange={(e) => setNewStudent({ ...newStudent, password: e.target.value })} />
-            <button className="button button--primary" onClick={addStudent}>Add Student</button>
+          <h3 className="section-title">
+            {activeTab === "teachers" ? "All Teachers" : "All Students"}
+            <span className="badge">
+              {activeTab === "teachers" ? teachers.length : students.length}
+            </span>
+          </h3>
+
+          <div className="list-container">
+            {loading ? (
+              <p className="empty-state">Loading...</p>
+            ) : (
+              <div className="list">
+                {(activeTab === "teachers" ? teachers : students).map((item) => (
+                  <div
+                    key={item.id}
+                    className={`list-item ${editingId === item.id ? "selected" : ""}`}
+                    onClick={() => handleEdit(item)}
+                  >
+                    <div className="item-info">
+                      <span className="item-name">{item.name}</span>
+                      <span className="item-details">
+                        {activeTab === "teachers"
+                          ? `${item["t-id"]} • ${item.email}`
+                          : `Roll: ${item.roll} • Class: ${item.classId}`
+                        }
+                      </span>
+                    </div>
+                    <div className="item-actions">
+                      <button
+                        className="button button--danger"
+                        onClick={(e) => handleDelete(item.id, e)}
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                ))}
+                {(activeTab === "teachers" ? teachers : students).length === 0 && (
+                  <p className="empty-state">No records found.</p>
+                )}
+              </div>
+            )}
           </div>
-          <ul className="list">
-            {students.map((s) => (
-              <li className="list-item" key={s.id}>
-                <span>{s.name} - Roll {s.roll} - {s.classId} ({s.email})</span>
-                <button className="button button--danger" onClick={() => deleteStudent(s.id)}>Delete</button>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </div>
   );
 }
+
 

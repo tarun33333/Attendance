@@ -4,7 +4,7 @@ import './styles.css'
 import { Authcontext } from '../Auth'
 export default function Navbar() {
 
-  const{logout}=useContext(Authcontext);
+  const { logout } = useContext(Authcontext);
   return (
     <div>
       <nav className="navbar">

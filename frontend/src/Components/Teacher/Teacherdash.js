@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 
 export default function TeacherDashboard() {
   const [date, setDate] = useState('');
-  const {user} = useContext(Authcontext);
+  const { user } = useContext(Authcontext);
   const [schedule, setschedule] = useState([]);
   const [otps, setOtps] = useState([]);
   const [generatedOtp, setGeneratedOtp] = useState(null);
@@ -26,7 +26,7 @@ export default function TeacherDashboard() {
 
   // Load schedule + OTPs when date or user changes  
   useEffect(() => {
-    if (!date || !user ) return;
+    if (!date || !user) return;
 
     // Fetch teacher schedule
     axios.get(`${process.env.REACT_APP_BACKEND}/teacher/tdyschedule/${user["t-id"]}`)
@@ -40,18 +40,14 @@ export default function TeacherDashboard() {
       .catch(err => {
         console.error("Error fetching schedule:", err);
       });
-
-
-
-    
   }, [user, date]);
 
-  useEffect(()=>{
+  useEffect(() => {
     // Fetch OTPs
     axios.get(`${process.env.REACT_APP_BACKEND}/otp/otps`).then(res => {
       setOtps(res.data.filter(o => o.teacher === user.name));
     });
-  },[generatedOtp,user.name]);
+  }, [generatedOtp, user.name]);
 
   // OTP Generator
   const otp = (e) => {
@@ -62,10 +58,10 @@ export default function TeacherDashboard() {
     };
     console.log("Generating OTP for:", d);
     axios.post(`${process.env.REACT_APP_BACKEND}/otp/otpgen`, d)
-    .then(async (res) => {
-      setGeneratedOtp(res.data.otp);
-      alert(`OTP generated - ${res.data.otp}`);
-    });
+      .then(async (res) => {
+        setGeneratedOtp(res.data.otp);
+        alert(`OTP generated - ${res.data.otp}`);
+      });
   };
 
   const getOtpForPeriod = (period, dept) => {
@@ -74,37 +70,58 @@ export default function TeacherDashboard() {
   };
 
   return (
-    <div className="dashboard">
+    <div className="teacher-dashboard">
       <Navbar />
-      <h2>Welcome, {user.name}! ☺️</h2>
-      <div className="filters">
-      </div>
-      <h2>Schedule for {date ? getDayName(date) : ''}</h2>
-      <div className="class-list">
-        {schedule.map(x => {
-          const otpValue = getOtpForPeriod(x.period, x.dept);
-            return (
-            <div key={x["dept"] + x.period} className="class-card">
-              <h3>Dept: {x.dept || '—'}</h3>
-              <h4>Period: {x.period}</h4>
-              <h4>Subject:</h4><h3>{x.subject}</h3>
+      <div className="dashboard-content">
+        <header className="dashboard-header">
+          <div className="header-content">
+            <h1>Welcome, {user.name}</h1>
+            <p className="date-display">{date ? getDayName(date) : ''}, {date}</p>
+          </div>
+        </header>
 
-              {otpValue ? (
-                <div className="otp">OTP: {otpValue}</div>
-              ) : (
-                // Allow OTP only if dept is not empty
-                x.dept && (
-                  <button
-                    onClick={() => otp({ period: x.period, dept: x.dept })}
-                    className="otp-button"
-                  >
-                    Generate OTP
-                  </button>
-                )
-              )}
-            </div>
-          );
-        })}
+        <section className="schedule-section">
+          <h2 className="section-title">Your Schedule</h2>
+          <div className="class-list">
+            {schedule.length > 0 ? (
+              schedule.map(x => {
+                const otpValue = getOtpForPeriod(x.period, x.dept);
+                return (
+                  <div key={x["dept"] + x.period} className="class-card">
+                    <div className="card-header">
+                      <span className="period-badge">Period {x.period}</span>
+                      <span className="dept-badge">{x.dept || '—'}</span>
+                    </div>
+                    <div className="card-body">
+                      <h3 className="subject-title">{x.subject}</h3>
+
+                      {otpValue ? (
+                        <div className="otp-display">
+                          <span className="otp-label">Active OTP</span>
+                          <span className="otp-value">{otpValue}</span>
+                        </div>
+                      ) : (
+                        // Allow OTP only if dept is not empty
+                        x.dept && (
+                          <button
+                            onClick={() => otp({ period: x.period, dept: x.dept })}
+                            className="generate-otp-button"
+                          >
+                            Generate OTP
+                          </button>
+                        )
+                      )}
+                    </div>
+                  </div>
+                );
+              })
+            ) : (
+              <div className="no-schedule">
+                <p>No classes scheduled for today.</p>
+              </div>
+            )}
+          </div>
+        </section>
       </div>
     </div>
   );
