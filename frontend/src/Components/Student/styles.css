@@ -283,6 +283,23 @@
   text-decoration: underline;
 }
 
+/* Logout Button */
+.logout-button {
+  padding: 0.5rem 1rem;
+  background: rgba(229, 62, 62, 0.1);
+  color: var(--danger-color);
+  border: 1px solid rgba(229, 62, 62, 0.2);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background: var(--danger-color);
+  color: white;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .student-dashboard {

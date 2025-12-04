@@ -42,35 +42,6 @@
 }
 
 .active-link {
-  background: var(--accent-color) !important;
-  color: white !important;
-  font-weight: 600;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
-}
-
-/* Header */
-.dashboard-header {
-  margin-bottom: 2rem;
-  padding: 1rem 0;
-}
-
-.header-content h1 {
-  margin: 0;
-  font-size: 2rem;
-  color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.date-display {
-  margin: 0.5rem 0 0;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
-}
-
-/* Schedule Section */
-.section-title {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
   color: white;
   font-weight: 600;
 }

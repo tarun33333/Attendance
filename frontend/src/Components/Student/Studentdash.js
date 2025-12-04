@@ -2,13 +2,15 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Authcontext } from '../Auth';
 import axios from 'axios';
 import './styles.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Studentdash() {
-  const { user } = useContext(Authcontext);
+  const { user, logout } = useContext(Authcontext);
   const [schedule, setSchedule] = useState([]);
   const [attendance, setAttendance] = useState({});
   const [otpInput, setOtpInput] = useState({});
   const [otps, setOtps] = useState([]);
+  const navigate = useNavigate();
 
   const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   const today = days[new Date().getDay()];
@@ -28,13 +30,23 @@ export default function Studentdash() {
         setSchedule([]);
       });
 
-    // Fetch OTPs for this class
-    axios
-      .get(`${process.env.REACT_APP_BACKEND}/otp/otps`)
-      .then(res => {
-        setOtps(res.data.filter(o => o.dept === user.classId));
-      })
-      .catch(err => console.error(err));
+    // Function to fetch OTPs
+    const fetchOtps = () => {
+      axios
+        .get(`${process.env.REACT_APP_BACKEND}/otp/otps`)
+        .then(res => {
+          setOtps(res.data.filter(o => o.dept === user.classId));
+        })
+        .catch(err => console.error(err));
+    };
+
+    // Initial fetch
+    fetchOtps();
+
+    // Poll every 3 seconds
+    const interval = setInterval(fetchOtps, 3000);
+
+    return () => clearInterval(interval);
   }, [user]);
 
   const handleOtpSubmit = (period, dept) => {
@@ -80,6 +92,11 @@ export default function Studentdash() {
       });
   };
 
+  const handleLogout = () => {
+    logout();
+    navigate('/');
+  };
+
   if (!user) {
     return null;
   }
@@ -91,8 +108,13 @@ export default function Studentdash() {
           <h1>Welcome back, {user.name}</h1>
           <p className="date-display">{today}, {dateStr}</p>
         </div>
-        <div className="user-avatar">
-          {user.name.charAt(0)}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <button className="logout-button" onClick={handleLogout}>
+            Logout
+          </button>
+          <div className="user-avatar">
+            {user.name.charAt(0)}
+          </div>
         </div>
       </header>
 
@@ -100,13 +122,13 @@ export default function Studentdash() {
         <h2 className="section-title">Today's Schedule</h2>
         <div className="student-class-list">
           {schedule.length > 0 ? (
-            schedule.map(x => {
+            schedule.map((x, index) => {
               const otpForPeriod = otps.find(o =>
                 o.dept === user.classId &&
                 o.period === x.period
               );
               return (
-                <div key={`${x.dept || 'cls'}-${x.period}`} className="student-class-card">
+                <div key={`${x.dept || 'cls'}-${x.period}-${index}`} className="student-class-card">
                   <div className="card-header">
                     <span className="period-badge">Period {x.period}</span>
                     <span className="subject-name">{x.subject}</span>
